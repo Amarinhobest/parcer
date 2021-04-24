@@ -3,6 +3,15 @@
 
 #include <iostream>
 
+//create enum class TokenType
+//create class Token with member tokenType and value
+
+//create class Parser which get vector<Tokens> from string
+//3+5 -7 *(2123+545)
+//
+
+
+
 int main()
 {
     std::cout << "Hello World!\n";

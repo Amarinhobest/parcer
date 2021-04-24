@@ -1,0 +1,62 @@
+1. enums, classes, structs written in camelCase. name of it must bee started in symbol
+e(other) or i(interfaces )
+for example 
+class testforblablabla not Ok
+
+class eTestForBlaBlaBla Ok
+
+2. file names, namespaces etc written in snake_case lower case
+namespace MyHomeWork			not OK
+namespace my_home_work				OK
+player_with_console_control.c		OK
+
+3. using namespace std not allowed
+Solve
+create file stdafx.h
+with include all std libraries which you use
+
+for example
+#include <string>
+...
+
+
+using std::string;
+or make alias
+using likestring = std::string;
+
+4. local variables named in camelCase
+5. class members named in camelCase with suffix _
+example
+class A
+{
+
+private:
+	int var1_;
+}
+6.	static non const variables named in camelCase with suffix _s
+7.	global non const variables named in camelCase with suffix _g
+8.	const static/global and enum types written in UPPER_SNAKE_CASE
+9.	all class members must bee in protected or private zone
+10. friend is deprecated. To use friend you must give approve from your TL
+11. Methods/Functions written in camelCase
+12. variable/function names must been readble and mindable
+13. function/method params starts with prefix _
+Split(string _from, string _to)
+14. when passed sample types to function/method don`t give it by reference, pointer if it not needed
+15. preffered type to pass object in method/function 
+const #type#&,  #type#& , or smart_ptr
+16. use smart pointers(shared_ptr, uniq_ptr) and not use raw ptr. It depracated and destroyed concept RAII
+17. use rule of five
+you can use default/delete or write implementation 
+class eA
+{
+	eA()						 = default; //or delete
+	eA(const	eA&)			 = default;
+	eA(eA&&)					 = default;
+	~eA()						 = default;
+
+	eA& operator=(const 	eA&) = default;
+	eA& operator=eA(eA&&)		 = default;
+private:
+	int var1_;
+};
