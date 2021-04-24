@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Parcer.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="code_convention.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
