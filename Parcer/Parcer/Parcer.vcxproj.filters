@@ -18,8 +18,16 @@
     <ClCompile Include="Parcer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="code_convention.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Parcer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

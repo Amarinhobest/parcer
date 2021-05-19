@@ -139,10 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Parcer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="code_convention.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Parcer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
